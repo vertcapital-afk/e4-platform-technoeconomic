@@ -1,0 +1,13 @@
+building,component,set,capex_eur_excl_vat,embc_kgco2eq,service_life_yr,en15459_maint_group,notes
+RB6,Gas instantaneous water heater (DHW),BAU,220,25,15,5,
+RB6,Electric resistance heating,BAU,450,130,20,2,
+RB6,Portable cooling unit,BAU,1050,210,10,2,
+RB6,Mitsubishi MXZ-3F54VF multi-split (R-32),MultiSplit,2400,175,20,4,
+RB6,Daikin EKHHEU200CV37 HPWH 200L (DHW),MultiSplit,1400,300,15,2,retail mid-point; EmbC estimated
+RB6,Daikin Altherma 3 R F + fan-coils (integrated DHW),HP,6500,510,20,3,re-anchored to integrated-DHW version
+iiiUC,Panel radiators (heating),BAU,3200,576,20,2,
+iiiUC,Portable AC units R-290 (cooling),BAU,8100,5774,10,2,
+iiiUC,Mitsubishi multi-split pack (R-32),MultiSplit,13500,12940,20,4,refrigerant charge-by-GWP incl. (CIBSE TM65)
+iiiUC,Daikin air-to-water pack,HP,23000,3114,20,3,
+both,PV 12 m2 / 2.7 kWp,with-PV runs,4050,3573,25,1,Ecoinvent 3.11 c-Si mid-point incl. BOS
+both,Battery 5 kWh LiFePO4,with-PV runs,2695,1000,10,1,EmbC 200 kgCO2eq/kWh usable (Le Varlet et al. 2020)
