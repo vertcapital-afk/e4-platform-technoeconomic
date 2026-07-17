@@ -36,7 +36,6 @@ scripts/
 - Simulated runs are the 12 with-PV cases per building (3 system sets × 4 climates); the 12 without-PV cases are derived arithmetically (total electricity as grid import; PV/storage set to zero), as documented in the paper's methods.
 - Ingestion validation (energy vectors, monthly-to-annual consistency within 1%, mandatory fields) is enforced by the engine; all 48 runs in `data/` pass it.
 - The `DGEG2025` trajectory in `matriz_artigo10.csv` follows the DGEG (2025) emission-factor anchors (0.138/0.055/0.009/0.005 kgCO₂eq/kWh at 2023/2030/2040/2050, linear interpolation; natural gas constant at 0.203); `EF_constante` holds the present-day factor for comparison.
-- The RB6 DesignBuilder model files (`MFH_BAU/Multisplit/HP.dsb`) will be added in a future commit.
 
 ## Attribution
 
