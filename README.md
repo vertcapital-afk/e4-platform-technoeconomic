@@ -47,4 +47,14 @@ Present-climate weather file (TMYx.2007–2021) sourced from climate.onebuilding
 
 ## License
 
-Data and models: CC BY 4.0. Scripts: MIT. Please cite the associated publication when reusing this material.
+- **Scripts** (`scripts/`): MIT — see [LICENSE](LICENSE).
+- **Data and models** (`data/`, `models/`): Creative Commons Attribution 4.0
+  International (CC BY 4.0) — see [LICENSE-DATA](LICENSE-DATA). Please cite
+  the associated publication when reusing this material.
+- **Weather files** (`weather/`): redistributed third-party and derivative
+  data, **not** relicensed here. The present-climate TMYx file originates
+  from [climate.onebuilding.org](https://climate.onebuilding.org) (free use
+  with credit, under that project's terms); the future-climate files are
+  derivatives morphed with the open-source Future Weather Generator v4.3.0
+  (Rodrigues, Fernandes & Carvalho, 2023, Building and Environment 233,
+  110104). Preserve this attribution when redistributing.
