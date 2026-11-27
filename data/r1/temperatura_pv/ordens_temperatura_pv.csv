@@ -1,0 +1,9 @@
+﻿edificio,cenario,horizonte_clima,fin_base,fin,lcgwp_base,lcgwp,muda_fin,muda_lcgwp
+RB6,SSP2-4.5,2050,MultiSplit < BAU < BombaCalor,MultiSplit < BAU < BombaCalor,BombaCalor < MultiSplit < BAU,BombaCalor < MultiSplit < BAU,False,False
+RB6,SSP3-7.0,2050,MultiSplit < BAU < BombaCalor,MultiSplit < BAU < BombaCalor,BombaCalor < MultiSplit < BAU,BombaCalor < MultiSplit < BAU,False,False
+RB6,SSP3-7.0,2080,MultiSplit < BAU < BombaCalor,MultiSplit < BAU < BombaCalor,BombaCalor < MultiSplit < BAU,BombaCalor < MultiSplit < BAU,False,False
+RB6,atual,-,MultiSplit < BombaCalor < BAU,MultiSplit < BombaCalor < BAU,BombaCalor < MultiSplit < BAU,BombaCalor < MultiSplit < BAU,False,False
+iiiUC,SSP2-4.5,2050,Pack1_Mitsubishi < BAU < Pack2_Daikin,Pack1_Mitsubishi < BAU < Pack2_Daikin,Pack2_Daikin < BAU < Pack1_Mitsubishi,Pack2_Daikin < BAU < Pack1_Mitsubishi,False,False
+iiiUC,SSP3-7.0,2050,Pack1_Mitsubishi < BAU < Pack2_Daikin,Pack1_Mitsubishi < BAU < Pack2_Daikin,Pack2_Daikin < BAU < Pack1_Mitsubishi,Pack2_Daikin < BAU < Pack1_Mitsubishi,False,False
+iiiUC,SSP3-7.0,2080,Pack1_Mitsubishi < BAU < Pack2_Daikin,Pack1_Mitsubishi < BAU < Pack2_Daikin,Pack2_Daikin < BAU < Pack1_Mitsubishi,Pack2_Daikin < BAU < Pack1_Mitsubishi,False,False
+iiiUC,atual,-,Pack1_Mitsubishi < BAU < Pack2_Daikin,Pack1_Mitsubishi < BAU < Pack2_Daikin,Pack2_Daikin < BAU < Pack1_Mitsubishi,Pack2_Daikin < BAU < Pack1_Mitsubishi,False,False

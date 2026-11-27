@@ -1,0 +1,228 @@
+{
+  "tipo": "matriz",
+  "decisoes": [
+    "DECISÃO-ST-A10-convencao (08/11/2026)",
+    "DECISÃO-ST-A10-amplitudes (08/11/2026)",
+    "DECISÃO-ST-A10-sens-declaradas (08/11/2026)",
+    "DECISÃO-ST-A10-escalada (08/11/2026)"
+  ],
+  "perfil": "financeiro_PV_reconstituido_2026-11-03",
+  "corridas": 48,
+  "variantes": 15,
+  "linhas": 720,
+  "definicao_variantes": {
+    "base": {
+      "eixo": "base",
+      "argumentos": {}
+    },
+    "rede_x2": {
+      "eixo": "rede",
+      "argumentos": {
+        "velocidade": 2.0
+      }
+    },
+    "rede_x0.5": {
+      "eixo": "rede",
+      "argumentos": {
+        "velocidade": 0.5
+      }
+    },
+    "rede_constante_2030": {
+      "eixo": "rede",
+      "argumentos": {
+        "tipo_rede": "constante_inicial"
+      }
+    },
+    "desconto_1pct": {
+      "eixo": "desconto",
+      "argumentos": {
+        "r": 0.01
+      }
+    },
+    "desconto_5pct": {
+      "eixo": "desconto",
+      "argumentos": {
+        "r": 0.05
+      }
+    },
+    "eletricidade_x0.75": {
+      "eixo": "precos",
+      "argumentos": {
+        "escala_elec": 0.75
+      }
+    },
+    "eletricidade_x1.25": {
+      "eixo": "precos",
+      "argumentos": {
+        "escala_elec": 1.25
+      }
+    },
+    "gas_x0.75": {
+      "eixo": "precos",
+      "argumentos": {
+        "escala_gas": 0.75
+      }
+    },
+    "gas_x1.25": {
+      "eixo": "precos",
+      "argumentos": {
+        "escala_gas": 1.25
+      }
+    },
+    "bateria_15anos": {
+      "eixo": "bateria",
+      "argumentos": {
+        "vida_bateria": 15.0
+      }
+    },
+    "carbono_proporcional": {
+      "eixo": "convencao",
+      "argumentos": {
+        "proporcional": true
+      }
+    },
+    "rede_gasmix": {
+      "eixo": "mistura_gas",
+      "argumentos": {
+        "tipo_rede": "central_gasmix"
+      }
+    },
+    "horizonte_20anos": {
+      "eixo": "horizonte",
+      "argumentos": {
+        "horizonte": 20
+      }
+    },
+    "escalada_1pct": {
+      "eixo": "escalada",
+      "argumentos": {
+        "escalada": {
+          "electricidade": 0.01,
+          "gas": 0.01,
+          "biomassa": 0.01,
+          "none": 0.01
+        }
+      }
+    }
+  },
+  "base_reproduz_historico_e_0311": true,
+  "invariancias_por_eixo": "verificadas linha a linha",
+  "resultados_prontos_para_manuscrito": false,
+  "motivo": "Sensibilidades sobre cenário financeiro explícito; interpretar e auditar (Sol, C12/C13) antes do manuscrito",
+  "por_variante": {
+    "base": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "bateria_15anos": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "carbono_proporcional": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 16
+    },
+    "desconto_1pct": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 10,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "desconto_5pct": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 4,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "eletricidade_x0.75": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "eletricidade_x1.25": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 2,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "escalada_1pct": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 8,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "gas_x0.75": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 4,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "gas_x1.25": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 12,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "horizonte_20anos": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 2,
+      "linhas_rank_lcgwp_muda": 16
+    },
+    "rede_constante_2030": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 16
+    },
+    "rede_gasmix": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "rede_x0.5": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 12
+    },
+    "rede_x2": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 0
+    }
+  },
+  "inputs_sha256": {
+    "studies\\a10_tecnoeconomia\\resultados\\matriz_artigo10.csv": "ac3049007ed603ce9b3f7084e88b9ee3360739f4d45355e1a9af14f2b649648b",
+    "studies\\a10_tecnoeconomia\\revisao\\resultados_financeiros_adotados_2026-11-23\\matriz_financeira.csv": "48ca89d453158585780777f2f8238720d35e12a6bc38ca0faba340b12d7fce02",
+    "studies\\a10_tecnoeconomia\\revisao\\perfil_financeiro_PV_adotado_2026-11-03.json": "087b099c92bff5c7b2bfe11c8e04595fe52d4b3ad08b60dea258d6d8ae3ffbdf",
+    "data\\motor\\blocoA\\runs.csv": "7e759fa2945fdcc769935027bd003a6e4481d4afe50cc0676692b9de021558e6",
+    "data\\motor\\blocoA\\resultados_mensais.csv": "8ea49773594fd56cb2fbde5428c49be545414ef24a95afcb456fce90e19ac4cd",
+    "data\\motor\\blocoB\\runs.csv": "287639e26c0821b229a1fefa8fe89463d7ba45ce5131532d170b18f183ee16b1",
+    "data\\motor\\blocoB\\resultados_mensais.csv": "74debe0e937b6b311445b78cfde5bed4481f50dcc3560f16f5122166e974858e"
+  }
+}

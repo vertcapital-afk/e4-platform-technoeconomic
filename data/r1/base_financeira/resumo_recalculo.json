@@ -1,0 +1,189 @@
+{
+  "tipo": "matriz",
+  "perfil": {
+    "schema": 1,
+    "id": "financeiro_PV_reconstituido_2026-11-03",
+    "data_preparacao": "2026-11-03",
+    "aprovado_para_resultados_finais": false,
+    "tratamento_fiscal": "Hipótese padrão de compra e manutenção com IVA normal, sem dedução; não é enquadramento fiscal individual dos proprietários",
+    "referencias_fiscais": [
+      "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/c-iva-listas.aspx",
+      "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx"
+    ],
+    "hipoteses_pendentes": [
+      "Investidor: confirmar convenção de IVA não dedutível nos dois casos, sem alegar situação real da UC",
+      "Manutenção/instalação: confirmar composição e elegibilidade de taxas especiais; sem prova não aplicar exceções",
+      "Preços: vários são estimativas documentadas; não foram confirmados por faturas ou orçamentos individuais",
+      "Taxas fiscais de referência mantidas no horizonte por hipótese; não constituem previsão de legislação de 2030–2059"
+    ],
+    "edificios": {
+      "RB6": {
+        "RB6_BATERIA_5KWH": {
+          "preco_origem": 2695.06,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 10 - Applied Energy\\dados\\T3_Catalogo_Custos_2026-07-16.md",
+          "qualidade_preco": "estimativa T3 declarada líquida; base comercial original 2343,53 sem captura fiscal histórica localizada"
+        },
+        "RB6_BAU_AQS": {
+          "preco_origem": 220.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 11 - Energy and Buildings\\dados\\Catalogo_Sistemas_Rev6_Etapa1.docx",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "RB6_BAU_AQUECIMENTO": {
+          "preco_origem": 450.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 11 - Energy and Buildings\\dados\\Catalogo_Sistemas_Rev6_Etapa1.docx",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "RB6_BAU_ARREFECIMENTO": {
+          "preco_origem": 1050.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 11 - Energy and Buildings\\dados\\Catalogo_Sistemas_Rev6_Etapa1.docx",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "RB6_BC_AQS_HPWH": {
+          "preco_origem": 1400.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 10 - Applied Energy\\dados\\T3_Catalogo_Custos_2026-07-16.md",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "RB6_BC_AR_AGUA": {
+          "preco_origem": 6500.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 10 - Applied Energy\\dados\\T3_Catalogo_Custos_2026-07-16.md",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "RB6_MULTISPLIT": {
+          "preco_origem": 2400.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 11 - Energy and Buildings\\dados\\Catalogo_Sistemas_Rev6_Etapa1.docx",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "RB6_PV": {
+          "preco_origem": 4050.0,
+          "base_origem": "com_iva",
+          "iva_origem": 0.06,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 11 - Energy and Buildings\\dados\\Catalogo_Sistemas_Rev6_Etapa2.docx",
+          "qualidade_preco": "base de preço adotada por Sérgio: reconstituição do bruto original a 6%; estimativa documental, não nova proposta comercial"
+        }
+      },
+      "iiiUC": {
+        "IIIUC_BAU_PORTATEIS": {
+          "preco_origem": 8100.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 10 - Applied Energy\\dados\\T3_Catalogo_Custos_2026-07-16.md",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "IIIUC_BAU_RADIADORES": {
+          "preco_origem": 3200.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 10 - Applied Energy\\dados\\T3_Catalogo_Custos_2026-07-16.md",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "IIIUC_PACK1_MITSUBISHI": {
+          "preco_origem": 13500.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 10 - Applied Energy\\dados\\T3_Catalogo_Custos_2026-07-16.md",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "IIIUC_PACK2_DAIKIN": {
+          "preco_origem": 23000.0,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 10 - Applied Energy\\dados\\T3_Catalogo_Custos_2026-07-16.md",
+          "qualidade_preco": "valor líquido declarado no dossiê; não orçamento independente verificado"
+        },
+        "RB6_BATERIA_5KWH": {
+          "preco_origem": 2695.06,
+          "base_origem": "liquido",
+          "iva_origem": null,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 10 - Applied Energy\\dados\\T3_Catalogo_Custos_2026-07-16.md",
+          "qualidade_preco": "estimativa T3 declarada líquida; base comercial original 2343,53 sem captura fiscal histórica localizada"
+        },
+        "RB6_PV": {
+          "preco_origem": 4050.0,
+          "base_origem": "com_iva",
+          "iva_origem": 0.06,
+          "iva_investimento": 0.23,
+          "iva_manutencao": 0.23,
+          "fracao_iva_dedutivel": 0,
+          "fonte_preco": "6 Artigos\\Artigo 11 - Energy and Buildings\\dados\\Catalogo_Sistemas_Rev6_Etapa2.docx",
+          "qualidade_preco": "base de preço adotada por Sérgio: reconstituição do bruto original a 6%; estimativa documental, não nova proposta comercial"
+        }
+      }
+    },
+    "autorizado_para_recalculo": true,
+    "decisao_preco_PV": "reconstituir_4050_dividido_1.06",
+    "decisoes_confirmadas": [
+      "Sérgio: regularizar a perspetiva financeira após confirmar preços/IVA",
+      "Sérgio: reconstituir o líquido do PV por 4050/1.06, sem arredondamento intermédio"
+    ],
+    "rotulo_resultados": "Cenário financeiro padrão, IVA não recuperável; não certifica a posição fiscal real dos proprietários"
+  },
+  "linhas": 96,
+  "corridas": 48,
+  "historico_reproduzido": true,
+  "carbono_e_energia_preservados": true,
+  "resultados_prontos_para_manuscrito": false,
+  "motivo": "Cenário financeiro explícito; conferir classificações e pressupostos antes de editar o manuscrito",
+  "inputs_sha256": {
+    "studies\\a10_tecnoeconomia\\resultados\\matriz_artigo10.csv": "ac3049007ed603ce9b3f7084e88b9ee3360739f4d45355e1a9af14f2b649648b",
+    "studies\\a10_tecnoeconomia\\revisao\\perfil_financeiro_PV_adotado_2026-11-03.json": "087b099c92bff5c7b2bfe11c8e04595fe52d4b3ad08b60dea258d6d8ae3ffbdf",
+    "data\\motor\\blocoA\\runs.csv": "7e759fa2945fdcc769935027bd003a6e4481d4afe50cc0676692b9de021558e6",
+    "data\\motor\\blocoA\\resultados_mensais.csv": "8ea49773594fd56cb2fbde5428c49be545414ef24a95afcb456fce90e19ac4cd",
+    "data\\motor\\blocoB\\runs.csv": "287639e26c0821b229a1fefa8fe89463d7ba45ce5131532d170b18f183ee16b1",
+    "data\\motor\\blocoB\\resultados_mensais.csv": "74debe0e937b6b311445b78cfde5bed4481f50dcc3560f16f5122166e974858e"
+  },
+  "linhas_com_mudanca_rank": 20,
+  "grupos_comparados": 32
+}

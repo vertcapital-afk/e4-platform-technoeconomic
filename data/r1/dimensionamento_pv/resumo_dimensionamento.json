@@ -1,0 +1,145 @@
+{
+  "decisao": "DECISÃO-ST-A10-R2.4-dimensionamento = A, alínea a) (decisor, 26/11/2026)",
+  "tipo": "matriz",
+  "corridas": 24,
+  "grelha": [
+    [
+      6.0,
+      0.0
+    ],
+    [
+      6.0,
+      5.0
+    ],
+    [
+      6.0,
+      10.0
+    ],
+    [
+      12.0,
+      0.0
+    ],
+    [
+      12.0,
+      5.0
+    ],
+    [
+      12.0,
+      10.0
+    ],
+    [
+      18.0,
+      0.0
+    ],
+    [
+      18.0,
+      5.0
+    ],
+    [
+      18.0,
+      10.0
+    ]
+  ],
+  "linhas": 216,
+  "configuracao_do_artigo_reproduz_a_base": true,
+  "series_sha256": {
+    "IIIUC-245-2050-BAU-comPV": [
+      "iiiUC_BAU_2050_SSP2.csv",
+      "7c1eedba1ef218504fb09e286b25941a41ce94176b3d270e8948f8301215df1c"
+    ],
+    "IIIUC-245-2050-P1-comPV": [
+      "iiiUC_Mulltisplit_2050_SSP2.csv",
+      "e38279c6d1916d1e7261a0adcbd7804af91e8cdfb8a78a59f364f902e0ae0d51"
+    ],
+    "IIIUC-245-2050-P2-comPV": [
+      "iiiUC_HP_2050_SSP2.csv",
+      "168bd046cc0441473b0c4b60892cda993d5b01e9f3e1de23829c9692780464ba"
+    ],
+    "IIIUC-370-2050-BAU-comPV": [
+      "iiiUC_BAU_2050_SSP3.csv",
+      "895b52723a5361395abc40122feb934b4e9856f719589112bc622d233ca72169"
+    ],
+    "IIIUC-370-2050-P1-comPV": [
+      "iiiUC_Mulltisplit_2050_SSP3.csv",
+      "d5390064925c7ed8b4b898f6dd87557c738a3aed6ab3cc0929e7bbeac4ff72e7"
+    ],
+    "IIIUC-370-2050-P2-comPV": [
+      "iiiUC_HP_2050_SSP3.csv",
+      "2370f71a911cc468973985c8a2b66a636509acc2c9417e5b3f70f70ed9d5cb0a"
+    ],
+    "IIIUC-370-2080-BAU-comPV": [
+      "iiiUC_BAU_2080_SSP3.csv",
+      "aaa108410b4acadfe5493bbe8948fe9b8911598ee7e68f8b1c58e1732441e0ca"
+    ],
+    "IIIUC-370-2080-P1-comPV": [
+      "iiiUC_Mulltisplit_2080_SSP3.csv",
+      "269df720f84fdba82a7d46bcb6d60d5b092ceea19f966ea7dd3c90bcc4b631d0"
+    ],
+    "IIIUC-370-2080-P2-comPV": [
+      "iiiUC_HP_2080_SSP3.csv",
+      "d0aec289a170629f9931bf97428dffee4f38d74cc45356859e9df496ca192f59"
+    ],
+    "IIIUC-ATU-BAU-comPV": [
+      "iiiUC_BAU_Baseline.csv",
+      "150ed494f53283f9e2130793f51676f6fe81711693ed153c1055a0966e2ab21e"
+    ],
+    "IIIUC-ATU-P1-comPV": [
+      "iiiUC_Mulltisplit_Baseline.csv",
+      "8946f83aa8d52aef19635affc58cb8d23d3eece674e8b116b2f6ea8bd917f326"
+    ],
+    "IIIUC-ATU-P2-comPV": [
+      "iiiUC_HP_Baseline.csv",
+      "9f8875dc16c3ff5ffac229f7f4154335c2c9c04d427b104fec455227657fac35"
+    ],
+    "RB6-245-2050-BAU-comPV": [
+      "MFH_BAU_2050_SSP2.csv",
+      "94f6ac9f32b8049d72bbdf7307b42449cea7284beb603e52a69193d5ed9710c1"
+    ],
+    "RB6-245-2050-BC-comPV": [
+      "MFH_HP_2050_SSP2.csv",
+      "5dce175d19a4bd6f979cc6955e389d5f19d2936c4f35055968adf50762f67660"
+    ],
+    "RB6-245-2050-MS-comPV": [
+      "MFH_Multisplits_2050_SSP2.csv",
+      "f066aa625e16b356c3c3a0d960b2dc6427eb2dfa7008c63d44353f4af31c4594"
+    ],
+    "RB6-370-2050-BAU-comPV": [
+      "MFH_BAU_2050_SSP3.csv",
+      "ea1eddc213833693073920b6704c110cffef19f1af5c4212ea2d29dcbb82b85b"
+    ],
+    "RB6-370-2050-BC-comPV": [
+      "MFH_HP_2050_SSP3.csv",
+      "cf40089d41e8de444d0c1516e483c78cc44fad33d8bcaf1cc1e96b738adb2bb6"
+    ],
+    "RB6-370-2050-MS-comPV": [
+      "MFH_Multisplits_2050_SSP3.csv",
+      "0efd37f3db46f4444b87f210c7e5262e3276831b7fcbcd912e84a788a77cf528"
+    ],
+    "RB6-370-2080-BAU-comPV": [
+      "MFH_BAU_2080_SSP3.csv",
+      "187916918a0454f72163e80279e21e3283d6594538b672293959fab8bfd13b9b"
+    ],
+    "RB6-370-2080-BC-comPV": [
+      "MFH_HP_2080_SSP3.csv",
+      "143a620a77c33dca0dfe5762613b2a3cc33315146ce667c7eebd5160c6df6dee"
+    ],
+    "RB6-370-2080-MS-comPV": [
+      "MFH_Multisplits_2080_SSP3.csv",
+      "6f085f2c1156b82b6c506b296f936c47ae867a6c505e6dcf30a9c1e9541a56fd"
+    ],
+    "RB6-ATU-BAU-comPV": [
+      "MFH_BAU_Baseline.csv",
+      "24380bdd22d8d08e1ab4e33a7fcda69744351d74b4fdc5b011d5099885c13215"
+    ],
+    "RB6-ATU-BC-comPV": [
+      "MFH_HP_Baseline.csv",
+      "6440a5e9da62dd0afabbc047cac8c8e9962f69670e9ccfc5ed3419a1f864dde5"
+    ],
+    "RB6-ATU-MS-comPV": [
+      "MFH_Multisplits_Baseline.csv",
+      "f23a2a0ab1b7d50fa81d7d38aba0e26376d07f742648b5b82d6efd42f10abad6"
+    ]
+  },
+  "perfil": "financeiro_PV_reconstituido_2026-11-03",
+  "resultados_prontos_para_manuscrito": false
+}
