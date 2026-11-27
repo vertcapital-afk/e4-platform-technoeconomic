@@ -11,13 +11,11 @@ The files are provided to support the reproducibility of the reported results. T
 This version of the repository corresponds to the revised manuscript (R1). The version that accompanied the original submission (July 2026) remains available, unchanged, at:
 <https://github.com/vertcapital-afk/e4-platform-technoeconomic/tree/d36502aaae73505a11ae7f3917ee6642d35673ca>
 
-The cover letter of the revision declares the following corrections to the submitted version (quoted from the letter):
+Changes to the data in R1:
 
-> 1. Embodied-carbon inventories. The embodied carbon of several HVAC components did not match the product-level inventories. The largest difference concerned the non-residential multi-split pack: 12,940 kgCO2eq per installation in the submitted version, 3,895 kgCO2eq with the manufacturers' EPDs. The residential multi-split, heat-pump water heater and air-to-water heat pump were also updated (the revised air-to-water inventory accounts explicitly for its three fan-coil units, one per zone), and the embodied carbon of the non-residential baseline equipment, which had no documented source, is now taken from the EU Ecodesign preparatory studies. All carbon results reported in the paper have been recomputed; these inventory corrections leave the financial results unchanged (the separate VAT correction does change them; see our response to R2.6). The corrections change the magnitudes but not the nature of the non-residential finding (response to R2.7; Table 2).
->
-> 2. Value-added tax. Equipment costs had been entered net of VAT, whereas the PV price had been derived from a supplier catalogue price that includes VAT at 6%. All investment and maintenance costs are now entered at net prices, and VAT at 23% is applied as a non-recoverable cost for the investor; the global costs in Tables 4 and 5 and Figures 4–6 have been updated (response to R2.6).
->
-> 3. Statements not supported by the analysis. The submitted text stated that the full cost ranking was preserved across climates; only the identity of the least-cost option is preserved, and the text now says so. PV self-consumption is simulated, not measured as one highlight stated. The description of the residential building no longer refers to the validation of a simplified thermal model that this study does not use, and the version of the weather generator used for the future climates has been corrected.
+- Embodied carbon: several HVAC inventories were corrected against the manufacturers' EPDs (e.g. the non-residential multi-split pack: 12,940 → 3,895 kgCO2eq per installation), and the embodied carbon of the non-residential baseline equipment is now taken from the EU Ecodesign preparatory studies. All carbon results were recomputed.
+- VAT: all component prices are now net of VAT (the PV price previously included VAT at 6 %), and VAT at 23 % is applied to investment and maintenance as a non-recoverable cost. This changes the global costs (FIN30).
+- Result files of the sensitivity analyses of the revision were added (`data/r1/`).
 
 Changes to the repository in R1:
 
@@ -40,7 +38,8 @@ data/
                                    years, residual fraction, units counted, embodied carbon
   matriz_artigo10.csv              Evaluation matrix, 48 runs × 2 emission-factor trajectories:
                                    carbon on the R1 inventories, costs on the submitted
-                                   (net-of-VAT) basis; self-consumption τAC (Table 4)
+                                   cost basis (equipment net of VAT; PV price including
+                                   VAT at 6 %); self-consumption τAC (Table 4)
   r1/
     base_financeira/               R1 cost basis (VAT 23 %, not recoverable): FIN30 and its terms
                                    for 48 runs × 2 trajectories — Tables 4–5, Figures 4–6
@@ -55,6 +54,8 @@ data/
                                    (96 rows) — Section 3.5
     incremento_arrefecimento/      Variant without the cooling increments of the two reversible
                                    RB6 units (48 runs) — Section 3.5 (convention of Section 2.5)
+    temperatura_pv/                PV module-temperature check (supplementary; not reported in
+                                   the tables of the paper), 24 runs with PV
 models/
   MFH/                             RB6 dynamic-simulation results workbook (DesignBuilder)
   iiiUC/                           EnergyPlus IDF models (BAU / MultiSplit / HP), occupancy
@@ -85,6 +86,7 @@ Each folder of `data/r1/` holds the CSV and JSON files of the corresponding resu
 | `dimensionamento_pv/` | `resultados_dimensionamento_A10_R1_v1` |
 | `degradacao/` | `resultados_degradacao_A10_R1_v1` |
 | `incremento_arrefecimento/` | `resultados_incremento_A10_R1_v1` |
+| `temperatura_pv/` | `resultados_temperatura_pv_A10_R1_v1` |
 
 ## Reproducibility notes
 
@@ -95,7 +97,8 @@ Each folder of `data/r1/` holds the CSV and JSON files of the corresponding resu
 ### Notes on the R1 files
 
 - **Catalogue** (`component_catalogue.csv`). Columns and component labels follow Table 2 of the revised manuscript; the footnote markers of Table 2 are omitted (see the notes to Table 2 in the paper). *Net price* excludes VAT; the PV price is the supplier price including 6 % VAT divided by 1.06 (4,050 / 1.06). In the R1 cost basis, VAT at 23 % is applied to investment and maintenance as a non-recoverable cost. *Units counted* gives whole-unit / pro-rata counts over the 30-year period.
-- **Evaluation matrix** (`matriz_artigo10.csv`). The columns are the same as in the July version. Only `lcgwp` and `embc` change (64 of 96 rows: the components whose inventories were corrected); the cost columns (`fin`, `capex_vp`, `custo_energia_vp`) remain on the submitted, net-of-VAT basis, and `tau_ac` is unchanged. The R1 global cost FIN30 is the column `fin_financeiro` of `r1/base_financeira/matriz_financeira.csv` (the column `fin_historico` there reproduces `fin` of this matrix); the base rows of `r1/sensibilidades/matriz_sensibilidades.csv` (`variante = base`) carry the same values.
+- **Evaluation matrix** (`matriz_artigo10.csv`). The columns are the same as in the July version. Only `lcgwp` and `embc` change (64 of 96 rows: the components whose inventories were corrected); the cost columns (`fin`, `capex_vp`, `custo_energia_vp`) remain on the submitted cost basis (equipment net of VAT; PV price including VAT at 6 %), and `tau_ac` is unchanged. The R1 global cost FIN30 is the column `fin_financeiro` of `r1/base_financeira/matriz_financeira.csv` (the column `fin_historico` there reproduces `fin` of this matrix); the base rows of `r1/sensibilidades/matriz_sensibilidades.csv` (`variante = base`) carry the same values.
+- **Scripts** (`scripts/r1/`). The scripts that produced the other folders of `data/r1/` belong to the authors' working repository and are not included; each `resumo_*.json` records the configuration of its run and, except in `temperatura_pv/`, the SHA-256 of its inputs.
 - **Paths inside the JSON files** refer to the layout of the authors' working repository: `data\motor\blocoA\runs.csv` and `data\motor\blocoA\resultados_mensais.csv` are `data/blocoA_runs.csv` and `data/blocoA_resultados_mensais.csv` here (likewise for `blocoB`); `studies\a10_tecnoeconomia\resultados\matriz_artigo10.csv` is `data/matriz_artigo10.csv`; `studies\a10_tecnoeconomia\revisao\resultados_*` are the folders of `data/r1/` listed above. The same applies to the paths used by the scripts in `scripts/r1/`. Some JSON files also hash source files of the engine, which is not included.
 - **Single change to a copied file.** In `r1/base_financeira/resumo_recalculo.json`, absolute paths of the authors' machine were made relative by removing their local prefix, and nothing else was changed: the prefix of the working repository (`C:\e4-platform\`, 6 occurrences) and the prefix of the authors' local document folder (14 occurrences, in the `fonte_preco` fields of the embedded cost profile, which now begin with `6 Artigos\`). The documents cited in `fonte_preco` are not part of this repository.
 - **Line endings and hashes.** The SHA-256 values recorded in the JSON files were computed on files with CRLF line endings. The files that already existed in this repository keep their CRLF line endings: the energy inputs `data/bloco*` and `data/matriz_artigo10.csv` match those values byte for byte. The files of `data/r1/` are stored with LF, as in the Git repository of the authors; where a JSON file records the hash of one of them, it matches after converting LF to CRLF.
