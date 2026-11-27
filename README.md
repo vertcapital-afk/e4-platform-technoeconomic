@@ -21,7 +21,8 @@ Changes to the repository in R1:
 
 - `data/component_catalogue.csv` replaced by the catalogue used by the R1 cost basis, with the columns of Table 2 of the revised manuscript.
 - `data/matriz_artigo10.csv` replaced by its R1 version (same columns; see the notes below).
-- `data/r1/` added: the result files of the revision (one folder per axis).
+- `data/r1/` added: the result files of the revision (one folder per axis) and the hourly simulation series used by two of them (`data/r1/horarios/`).
+- `.gitattributes` added, so that `data/r1/horarios/` is stored byte for byte.
 - `scripts/r1/` added: the evaluation scripts that produced the R1 cost basis.
 - The energy inputs (`data/bloco*`), `models/`, `weather/` and the two July scripts are unchanged.
 
@@ -56,6 +57,10 @@ data/
                                    RB6 units (48 runs) — Section 3.5 (convention of Section 2.5)
     temperatura_pv/                PV module-temperature check (supplementary; not reported in
                                    the tables of the paper), 24 runs with PV
+    horarios/                      Hourly simulation outputs (8,760 h) of the 12 with-PV runs of
+      MFH/  iiiUC/                 each building (3 system sets × 4 climates), as delivered by
+                                   the author of the simulations (24 CSV; RB6 in MFH/); used by
+                                   dimensionamento_pv/ and degradacao/
 models/
   MFH/                             RB6 dynamic-simulation results workbook (DesignBuilder)
   iiiUC/                           EnergyPlus IDF models (BAU / MultiSplit / HP), occupancy
@@ -76,7 +81,7 @@ scripts/
     recalcular_financeiro_a10.py      R1 cost basis (produces data/r1/base_financeira/)
 ```
 
-Each folder of `data/r1/` holds the CSV and JSON files of the corresponding result folder of the authors' working repository, copied without change (single exception below). The `resumo_*.json` file of each folder records the run configuration and, where present, the SHA-256 of its inputs.
+Each folder of `data/r1/` holds the CSV and JSON files of the corresponding result folder of the authors' working repository, copied without change (single exception below). The `resumo_*.json` file of each folder records the run configuration and, where present, the SHA-256 of its inputs. `horarios/` holds input series rather than results: the `series_sha256` field of `dimensionamento_pv/resumo_dimensionamento.json` and of `degradacao/resumo_degradacao.json` records, for each of the 24 runs with PV, the file it used and its SHA-256.
 
 | `data/r1/` folder | Source result folder |
 |---|---|
@@ -87,6 +92,7 @@ Each folder of `data/r1/` holds the CSV and JSON files of the corresponding resu
 | `degradacao/` | `resultados_degradacao_A10_R1_v1` |
 | `incremento_arrefecimento/` | `resultados_incremento_A10_R1_v1` |
 | `temperatura_pv/` | `resultados_temperatura_pv_A10_R1_v1` |
+| `horarios/` | `horarios_marco_2026-11-26` (`MFH/`, `iiiUC/`) |
 
 ## Reproducibility notes
 
@@ -101,7 +107,8 @@ Each folder of `data/r1/` holds the CSV and JSON files of the corresponding resu
 - **Scripts** (`scripts/r1/`). The scripts that produced the other folders of `data/r1/` belong to the authors' working repository and are not included; each `resumo_*.json` records the configuration of its run and, except in `temperatura_pv/`, the SHA-256 of its inputs.
 - **Paths inside the JSON files** refer to the layout of the authors' working repository: `data\motor\blocoA\runs.csv` and `data\motor\blocoA\resultados_mensais.csv` are `data/blocoA_runs.csv` and `data/blocoA_resultados_mensais.csv` here (likewise for `blocoB`); `studies\a10_tecnoeconomia\resultados\matriz_artigo10.csv` is `data/matriz_artigo10.csv`; `studies\a10_tecnoeconomia\revisao\resultados_*` are the folders of `data/r1/` listed above. The same applies to the paths used by the scripts in `scripts/r1/`. Some JSON files also hash source files of the engine, which is not included.
 - **Single change to a copied file.** In `r1/base_financeira/resumo_recalculo.json`, absolute paths of the authors' machine were made relative by removing their local prefix, and nothing else was changed: the prefix of the working repository (`C:\e4-platform\`, 6 occurrences) and the prefix of the authors' local document folder (14 occurrences, in the `fonte_preco` fields of the embedded cost profile, which now begin with `6 Artigos\`). The documents cited in `fonte_preco` are not part of this repository.
-- **Line endings and hashes.** The SHA-256 values recorded in the JSON files were computed on files with CRLF line endings. The files that already existed in this repository keep their CRLF line endings: the energy inputs `data/bloco*` and `data/matriz_artigo10.csv` match those values byte for byte. The files of `data/r1/` are stored with LF, as in the Git repository of the authors; where a JSON file records the hash of one of them, it matches after converting LF to CRLF.
+- **Hourly series** (`horarios/`). EnergyPlus hourly output, one row per hour from `01/01 01:00:00` to `12/31 24:00:00` (8,760 rows), energies in J. Columns: date/time; site outdoor dry-bulb temperature [°C]; incident solar radiation on the PV surface [W/m²]; inverter DC input and AC output; battery charge and discharge; electric load centre production; facility purchased, surplus and produced electricity; and the end uses fans, cooling, heating, interior lights, interior equipment, pumps and water systems. Variants: RB6 BAU reports water systems as natural gas, the RB6 renovations as electricity; iiiUC has no water-systems column, and its BAU and MultiSplit files have no pumps column. The object names of the PV system differ between the two buildings. File names are as delivered (e.g. `Multisplits` in RB6, `Mulltisplit` in iiiUC). The EnergyPlus input files (`.idf`) of the hourly runs are not included.
+- **Line endings and hashes.** The SHA-256 values recorded in the JSON files were computed on files with CRLF line endings. The files that already existed in this repository keep their CRLF line endings: the energy inputs `data/bloco*` and `data/matriz_artigo10.csv` match those values byte for byte. The files of `data/r1/` are stored with LF, as in the Git repository of the authors; where a JSON file records the hash of one of them, it matches after converting LF to CRLF. Exception: the files of `data/r1/horarios/` keep their CRLF line endings (`.gitattributes`: `-text`) and match the recorded hashes byte for byte.
 
 ## Attribution
 
