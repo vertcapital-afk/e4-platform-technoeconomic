@@ -1,0 +1,81 @@
+{
+  "decisao": "DECISÃO-ST-A10-incremento-arrefecimento EM CURSO (a cadeia recomenda A); esta medição não decide",
+  "relato": "à parte, como a degradação e o dimensionamento; não entra na Tabela 6 nem nas «14 variantes»",
+  "tipo": "todas",
+  "corridas": 48,
+  "perfil": "financeiro_PV_reconstituido_2026-11-03",
+  "acrescimos": {
+    "RB6_MULTISPLIT": {
+      "id_par": 1,
+      "preco_catalogo": 2400.0,
+      "aquecimento": 2136.0,
+      "acrescimo": 264.0,
+      "outros": 0.0,
+      "preco_variante": 2136.0,
+      "nome_aquecimento": "Multi-Split (reversível)",
+      "nome_arrefecimento": "Multi-Split"
+    },
+    "RB6_BC_AR_AGUA": {
+      "id_par": 4,
+      "preco_catalogo": 6500.0,
+      "aquecimento": 4895.0,
+      "acrescimo": 605.0,
+      "outros": 1000.0,
+      "preco_variante": 5895.0,
+      "nome_aquecimento": "BC ar-água + fancoils",
+      "nome_arrefecimento": "BC ar-água"
+    }
+  },
+  "iiiuc_sem_exposicao": {
+    "IIIUC_PACK2_DAIKIN": {
+      "capex": 23000.0,
+      "celula_aquecimento": 17480.0,
+      "celula_arrefecimento": 5520.0,
+      "fracao_aquecimento": 0.76,
+      "substituido": false
+    },
+    "IIIUC_PACK1_MITSUBISHI": {
+      "capex": 13500.0,
+      "celula_aquecimento": 10260.0,
+      "celula_arrefecimento": 3240.0,
+      "fracao_aquecimento": 0.76,
+      "substituido": false
+    }
+  },
+  "delta_fin_por_componente": {
+    "RB6_MULTISPLIT": 692.2056332243765,
+    "RB6_BC_AR_AGUA": 1440.447891837117
+  },
+  "delta_fin_por_sistema": {
+    "RB6/BAU": 0.0,
+    "RB6/MultiSplit": 692.2056332243765,
+    "RB6/BombaCalor": 1440.447891837117,
+    "iiiUC/BAU": 0.0,
+    "iiiUC/Pack1_Mitsubishi": 0.0,
+    "iiiUC/Pack2_Daikin": 0.0
+  },
+  "precos_do_catalogo_reproduzem_a_base": true,
+  "lcgwp_igual_a_base": true,
+  "ordens": {
+    "grupos": 16,
+    "grupos_rb6": 8,
+    "grupos_rb6_clima_futuro": 6,
+    "rb6_futuro_ordem_hp_bau_muda": 5,
+    "rb6_ordem_hp_bau_muda": 5,
+    "mais_barato_muda": 0,
+    "iiiuc_ordem_muda": 0,
+    "rb6_margem_variante_min": 4586.873227603464,
+    "rb6_margem_variante_max": 5397.9006277646295
+  },
+  "resultados_prontos_para_manuscrito": false,
+  "inputs_sha256": {
+    "studies/a10_tecnoeconomia/revisao/resultados_financeiros_adotados_2026-11-23/matriz_financeira.csv": "48ca89d453158585780777f2f8238720d35e12a6bc38ca0faba340b12d7fce02",
+    "studies/a10_tecnoeconomia/revisao/perfil_financeiro_PV_adotado_2026-11-03.json": "087b099c92bff5c7b2bfe11c8e04595fe52d4b3ad08b60dea258d6d8ae3ffbdf",
+    "src/e4/dinamica_capex.py": "e9f3fa30bb5e252ed137838f56f49c982d2f6e574b3148b5ae4ea19c7aebdb6f",
+    "src/e4/medidas.py": "a393d31c900ba3398005f681298063e752e156fd928a191f1f1b195579a79c61",
+    "data/motor/blocoA/runs.csv": "7e759fa2945fdcc769935027bd003a6e4481d4afe50cc0676692b9de021558e6",
+    "data/motor/blocoA/resultados_mensais.csv": "8ea49773594fd56cb2fbde5428c49be545414ef24a95afcb456fce90e19ac4cd",
+    "data/motor/blocoB/runs.csv": "287639e26c0821b229a1fefa8fe89463d7ba45ce5131532d170b18f183ee16b1",
+    "data/motor/blocoB/resultados_mensais.csv": "74debe0e937b6b311445b78cfde5bed4481f50dcc3560f16f5122166e974858e"
+  }
+}

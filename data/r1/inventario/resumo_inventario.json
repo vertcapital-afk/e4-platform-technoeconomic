@@ -1,0 +1,444 @@
+{
+  "tipo": "matriz",
+  "decisoes": [
+    "DECISÃO-ST-A10-inventario-completude, opção A (17/11/2026)",
+    "DECISÃO-ST-A10-EPD-por-componente, opção B (17/11/2026)",
+    "DECISÃO-ST-A10-ventiloconvectores, opção A (19/11/2026)",
+    "DECISÃO-ST-A10-FC-GT, opção B (23/11/2026)",
+    "DECISÃO-ST-A10-C15-refrigerante, opção A (23/11/2026)"
+  ],
+  "perfil": "financeiro_PV_reconstituido_2026-11-03",
+  "corridas": 48,
+  "cenarios": 11,
+  "linhas": 528,
+  "definicao_cenarios": {
+    "base": {},
+    "ms_epd_multisplit_kw": {
+      "RB6_MULTISPLIT": 2138.268,
+      "IIIUC_PACK1_MITSUBISHI": 6914.16
+    },
+    "ms_proxy_potencia": {
+      "RB6_MULTISPLIT": 1753.542857,
+      "IIIUC_PACK1_MITSUBISHI": 5317.028571
+    },
+    "refrigerante_por_circuito": {
+      "RB6_MULTISPLIT": 1267.417297,
+      "IIIUC_PACK1_MITSUBISHI": 3631.043243
+    },
+    "rb6_ventiloconvectores_sabiana_kw": {
+      "RB6_BC_AR_AGUA": 2124.776994
+    },
+    "iiiuc_ventiloconvectores_sabiana_kw_45": {
+      "IIIUC_PACK2_DAIKIN": 3826.267316
+    },
+    "iiiuc_ventiloconvectores_sabiana_kw_50": {
+      "IIIUC_PACK2_DAIKIN": 3903.599305
+    },
+    "completo_proxy_sabiana_kw_45": {
+      "RB6_MULTISPLIT": 1753.542857,
+      "IIIUC_PACK1_MITSUBISHI": 5317.028571,
+      "RB6_BC_AR_AGUA": 2124.776994,
+      "IIIUC_PACK2_DAIKIN": 3826.267316
+    },
+    "completo_kw_sabiana_kw_45": {
+      "RB6_MULTISPLIT": 2138.268,
+      "IIIUC_PACK1_MITSUBISHI": 6914.16,
+      "RB6_BC_AR_AGUA": 2124.776994,
+      "IIIUC_PACK2_DAIKIN": 3826.267316
+    },
+    "completo_proxy_sabiana_kw_50": {
+      "RB6_MULTISPLIT": 1753.542857,
+      "IIIUC_PACK1_MITSUBISHI": 5317.028571,
+      "RB6_BC_AR_AGUA": 2124.776994,
+      "IIIUC_PACK2_DAIKIN": 3903.599305
+    },
+    "completo_kw_sabiana_kw_50": {
+      "RB6_MULTISPLIT": 2138.268,
+      "IIIUC_PACK1_MITSUBISHI": 6914.16,
+      "RB6_BC_AR_AGUA": 2124.776994,
+      "IIIUC_PACK2_DAIKIN": 3903.599305
+    }
+  },
+  "impressao_digital_cenarios": "cb06171a6e06d8eac266b854cacd27664a34f8e0d0f1e11cfa982ceb3570dab6",
+  "guardas": "FIN, LCGWP operacional e energia iguais à base; ΔEmbC = previsto; ΔLCGWP = ΔEmbC (linha a linha)",
+  "resultados_prontos_para_manuscrito": false,
+  "por_cenario": {
+    "base": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "completo_kw_sabiana_kw_45": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 8,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 16
+    },
+    "completo_kw_sabiana_kw_50": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 8,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 16
+    },
+    "completo_proxy_sabiana_kw_45": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 8,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 16
+    },
+    "completo_proxy_sabiana_kw_50": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 8,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 16
+    },
+    "iiiuc_ventiloconvectores_sabiana_kw_45": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 8,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 16
+    },
+    "iiiuc_ventiloconvectores_sabiana_kw_50": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 8,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 18
+    },
+    "ms_epd_multisplit_kw": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "ms_proxy_potencia": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 0
+    },
+    "rb6_ventiloconvectores_sabiana_kw": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 2,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 4
+    },
+    "refrigerante_por_circuito": {
+      "grupos": 16,
+      "vencedor_fin_muda": 0,
+      "vencedor_lcgwp_muda": 0,
+      "linhas_rank_fin_muda": 0,
+      "linhas_rank_lcgwp_muda": 12
+    }
+  },
+  "margens": {
+    "base|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        292.1,
+        319.1
+      ],
+      "bau_menos_pior_renovacao": [
+        14882.1,
+        16652.0
+      ]
+    },
+    "base|iiiUC": {
+      "menor_carbono": {
+        "Pack2_Daikin": 8
+      },
+      "ms_menos_hp": [
+        1480.5,
+        1648.3
+      ],
+      "bau_menos_pior_renovacao": [
+        -633.4,
+        -165.3
+      ]
+    },
+    "completo_kw_sabiana_kw_45|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        1525.0,
+        1552.1
+      ],
+      "bau_menos_pior_renovacao": [
+        13351.5,
+        15121.4
+      ]
+    },
+    "completo_kw_sabiana_kw_45|iiiUC": {
+      "menor_carbono": {
+        "BAU": 8
+      },
+      "ms_menos_hp": [
+        6094.3,
+        6262.1
+      ],
+      "bau_menos_pior_renovacao": [
+        -6671.7,
+        -6203.6
+      ]
+    },
+    "completo_kw_sabiana_kw_50|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        1525.0,
+        1552.1
+      ],
+      "bau_menos_pior_renovacao": [
+        13351.5,
+        15121.4
+      ]
+    },
+    "completo_kw_sabiana_kw_50|iiiUC": {
+      "menor_carbono": {
+        "BAU": 8
+      },
+      "ms_menos_hp": [
+        5939.6,
+        6107.4
+      ],
+      "bau_menos_pior_renovacao": [
+        -6671.7,
+        -6203.6
+      ]
+    },
+    "completo_proxy_sabiana_kw_45|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        755.6,
+        782.6
+      ],
+      "bau_menos_pior_renovacao": [
+        14121.0,
+        15890.9
+      ]
+    },
+    "completo_proxy_sabiana_kw_45|iiiUC": {
+      "menor_carbono": {
+        "BAU": 8
+      },
+      "ms_menos_hp": [
+        2900.0,
+        3067.8
+      ],
+      "bau_menos_pior_renovacao": [
+        -3477.5,
+        -3009.3
+      ]
+    },
+    "completo_proxy_sabiana_kw_50|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        755.6,
+        782.6
+      ],
+      "bau_menos_pior_renovacao": [
+        14121.0,
+        15890.9
+      ]
+    },
+    "completo_proxy_sabiana_kw_50|iiiUC": {
+      "menor_carbono": {
+        "BAU": 8
+      },
+      "ms_menos_hp": [
+        2745.4,
+        2913.2
+      ],
+      "bau_menos_pior_renovacao": [
+        -3477.5,
+        -3009.3
+      ]
+    },
+    "iiiuc_ventiloconvectores_sabiana_kw_45|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        292.1,
+        319.1
+      ],
+      "bau_menos_pior_renovacao": [
+        14882.1,
+        16652.0
+      ]
+    },
+    "iiiuc_ventiloconvectores_sabiana_kw_45|iiiUC": {
+      "menor_carbono": {
+        "BAU": 8
+      },
+      "ms_menos_hp": [
+        56.0,
+        223.8
+      ],
+      "bau_menos_pior_renovacao": [
+        -633.4,
+        -165.3
+      ]
+    },
+    "iiiuc_ventiloconvectores_sabiana_kw_50|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        292.1,
+        319.1
+      ],
+      "bau_menos_pior_renovacao": [
+        14882.1,
+        16652.0
+      ]
+    },
+    "iiiuc_ventiloconvectores_sabiana_kw_50|iiiUC": {
+      "menor_carbono": {
+        "BAU": 8
+      },
+      "ms_menos_hp": [
+        -98.7,
+        69.1
+      ],
+      "bau_menos_pior_renovacao": [
+        -633.4,
+        -264.0
+      ]
+    },
+    "ms_epd_multisplit_kw|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        1822.6,
+        1849.6
+      ],
+      "bau_menos_pior_renovacao": [
+        13351.5,
+        15121.4
+      ]
+    },
+    "ms_epd_multisplit_kw|iiiUC": {
+      "menor_carbono": {
+        "Pack2_Daikin": 8
+      },
+      "ms_menos_hp": [
+        7518.8,
+        7686.6
+      ],
+      "bau_menos_pior_renovacao": [
+        -6671.7,
+        -6203.6
+      ]
+    },
+    "ms_proxy_potencia|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        1053.1,
+        1080.2
+      ],
+      "bau_menos_pior_renovacao": [
+        14121.0,
+        15890.9
+      ]
+    },
+    "ms_proxy_potencia|iiiUC": {
+      "menor_carbono": {
+        "Pack2_Daikin": 8
+      },
+      "ms_menos_hp": [
+        4324.6,
+        4492.4
+      ],
+      "bau_menos_pior_renovacao": [
+        -3477.5,
+        -3009.3
+      ]
+    },
+    "rb6_ventiloconvectores_sabiana_kw|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 6,
+        "MultiSplit": 2
+      },
+      "ms_menos_hp": [
+        -5.5,
+        21.5
+      ],
+      "bau_menos_pior_renovacao": [
+        14876.6,
+        16652.0
+      ]
+    },
+    "rb6_ventiloconvectores_sabiana_kw|iiiUC": {
+      "menor_carbono": {
+        "Pack2_Daikin": 8
+      },
+      "ms_menos_hp": [
+        1480.5,
+        1648.3
+      ],
+      "bau_menos_pior_renovacao": [
+        -633.4,
+        -165.3
+      ]
+    },
+    "refrigerante_por_circuito|RB6": {
+      "menor_carbono": {
+        "BombaCalor": 8
+      },
+      "ms_menos_hp": [
+        80.9,
+        107.9
+      ],
+      "bau_menos_pior_renovacao": [
+        15093.2,
+        16863.1
+      ]
+    },
+    "refrigerante_por_circuito|iiiUC": {
+      "menor_carbono": {
+        "Pack2_Daikin": 8
+      },
+      "ms_menos_hp": [
+        952.6,
+        1120.4
+      ],
+      "bau_menos_pior_renovacao": [
+        -105.5,
+        362.6
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "studies\\a10_tecnoeconomia\\resultados\\matriz_artigo10.csv": "ac3049007ed603ce9b3f7084e88b9ee3360739f4d45355e1a9af14f2b649648b",
+    "studies\\a10_tecnoeconomia\\revisao\\resultados_financeiros_adotados_2026-11-23\\matriz_financeira.csv": "48ca89d453158585780777f2f8238720d35e12a6bc38ca0faba340b12d7fce02",
+    "studies\\a10_tecnoeconomia\\revisao\\perfil_financeiro_PV_adotado_2026-11-03.json": "087b099c92bff5c7b2bfe11c8e04595fe52d4b3ad08b60dea258d6d8ae3ffbdf",
+    "src\\e4\\dinamica_capex.py": "e9f3fa30bb5e252ed137838f56f49c982d2f6e574b3148b5ae4ea19c7aebdb6f",
+    "studies\\a10_tecnoeconomia\\revisao\\sensibilidade_inventario_a10.py": "3db6e421efe356a8d315bf01174942d5767202d91c43664bc1af8a41edcbe421",
+    "data\\motor\\blocoA\\runs.csv": "7e759fa2945fdcc769935027bd003a6e4481d4afe50cc0676692b9de021558e6",
+    "data\\motor\\blocoA\\resultados_mensais.csv": "8ea49773594fd56cb2fbde5428c49be545414ef24a95afcb456fce90e19ac4cd",
+    "data\\motor\\blocoB\\runs.csv": "287639e26c0821b229a1fefa8fe89463d7ba45ce5131532d170b18f183ee16b1",
+    "data\\motor\\blocoB\\resultados_mensais.csv": "74debe0e937b6b311445b78cfde5bed4481f50dcc3560f16f5122166e974858e"
+  }
+}
